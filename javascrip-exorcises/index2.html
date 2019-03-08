@@ -1,0 +1,43 @@
+<html>
+<head>
+        <meta charset="utf-8" />
+        <title>Cirle</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Taurese Usman MD1A">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+        <link rel="stylesheet" href="css.css" />
+    </head>
+Methode om uit te rekenen
+    <body>
+        <script>
+        $(document).ready(function() {
+      $("#area").click(function() {
+        var a = $("#radius").val();
+        $("#resultA").val((22 / 7) * (+a) * (+a));
+      });
+      $("#perimeter").click(function() {
+        var a = $("#radius").val();
+        $("#resultP").val((2) * (22 / 7) * (+a));
+      });
+    });
+    </script>
+    <div id="content">
+        <br>
+        Antwoord in cm:
+        <input type="number" id="radius"> <br><br>
+        <button type="button" id="perimeter"> Perimeter </button>
+        <button type="button" id="area"> Area </button>
+       <br><br>
+       Antwoord Perimeter <input type="text" id="resultP">
+       <br><br>
+        Antwoord Area
+        <input type="text" id="resultA">
+        <br><br>
+
+          <a href="index.html">Terug</a>
+        </div>
+        <br>
+    </body>
+
+</html>

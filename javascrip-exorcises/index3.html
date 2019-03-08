@@ -1,0 +1,42 @@
+<html>
+<head>
+        <meta charset="utf-8" />
+        <title>Cirle</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Taurese Usman MD1A">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+        <link rel="stylesheet" href="css.css" />
+    </head>
+
+    <body>
+        <div id="content">
+            Width: <input type="number" id="width"> <br><br>
+            Height: <input type="number" id="height"> <br><br>
+            <button type="button" id="area"> Area </button>
+            <button type="button" id="circumference"> Circumference </button>
+            <br><br>
+            Result Area: <input type="number" id="resultA"> <br><br>
+            Result Circumference: <input type="number" id="resultB"> <br><br>
+  
+        </div>
+        <script>
+            $(document).ready(function () {
+                //Area
+                $("#area").click(function () {
+                    var a = $("#width").val();
+                    var b = $("#height").val();
+                    $("#resultA").val((+a) * (+b));
+                });
+                //Circumference
+                $("#circumference").click(function () {
+                    var a = $("#width").val();
+                    var b = $("#height").val();
+                    $("#resultB").val(2 * (+a) + 2 * (+b));
+                });
+            });
+        </script>
+        <a href="index.html">Terug</a>
+    </body>
+
+</html>
